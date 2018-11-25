@@ -95,8 +95,8 @@ Organizations:
               Port: 7051
 
     - &Org7
-        Name: Org6MSP
-        ID: Org6MSP
+        Name: Org7MSP
+        ID: Org7MSP
         MSPDir: crypto-config/peerOrganizations/org7.example.com/msp
         AnchorPeers:
             - Host: peer0.org7.example.com

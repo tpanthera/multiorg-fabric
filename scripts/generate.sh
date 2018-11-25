@@ -50,7 +50,31 @@ fi
 
 configtxgen -profile MyChannel -outputAnchorPeersUpdate ./channel-artifacts/Org3MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org3MSP
 if [ "$?" -ne 0 ]; then
-  echo "Failed to generate anchor peer update for Org2MSP..."
+  echo "Failed to generate anchor peer update for Org3MSP..."
   exit 1
 fi
 
+
+configtxgen -profile MyChannel -outputAnchorPeersUpdate ./channel-artifacts/Org4MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org4MSP
+if [ "$?" -ne 0 ]; then
+  echo "Failed to generate anchor peer update for Org4MSP..."
+  exit 1
+fi
+
+configtxgen -profile MyChannel -outputAnchorPeersUpdate ./channel-artifacts/Org5MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org5MSP
+if [ "$?" -ne 0 ]; then
+  echo "Failed to generate anchor peer update for Org5MSP..."
+  exit 1
+fi
+
+configtxgen -profile MyChannel -outputAnchorPeersUpdate ./channel-artifacts/Org6MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org6MSP
+if [ "$?" -ne 0 ]; then
+  echo "Failed to generate anchor peer update for Org6MSP..."
+  exit 1
+fi
+
+configtxgen -profile MyChannel -outputAnchorPeersUpdate ./channel-artifacts/Org7MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org7MSP
+if [ "$?" -ne 0 ]; then
+  echo "Failed to generate anchor peer update for Org7MSP..."
+  exit 1
+fi
